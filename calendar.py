@@ -27,7 +27,7 @@ def get_cal_nmonth(year_input,month_input,num_of_month):
         #fill whitepsace for the day before first day of the month
         for whitespace in range(0, day_list.weekday()):
             day_value[whitespace].append(' ')
-        while day_list.month == month_nmonth and day_list.year == year_input :
+        while day_list.month == month_nmonth :
             this_weekday = day_value[day_list.weekday()]
             this_weekday.append(str(day_list.day))
             day_list = day_list + timedelta(days=1)
